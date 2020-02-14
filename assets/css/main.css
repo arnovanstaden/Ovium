@@ -1,0 +1,250 @@
+@import "./fonts.css";
+
+/* Variables */
+
+:root {
+
+    /* Fonts */
+    --heading-font: "Playfair Display";
+    --par-font: "Lato";
+
+    /* Colours */
+    --dark-grey: #1E1D1E;
+    --dark-blue: #0D3C56;
+    --light-blue: #6894B1;
+    --off-white: #F9F7F8;
+    --light-grey: rgba(165,165,165,1)
+
+}
+
+/* ----------------------------- */
+
+/* General */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: var(--par-font);
+    color: var(--dark-grey);
+}
+
+/* Section Headings */
+
+.section-heading {
+    text-align: center;
+    display: block;
+    padding: 5% 10% 3% 10%;
+}
+
+.section-heading h1 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.section-heading p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* more button */
+
+.more-button {
+  background-color: var(--dark-blue);
+  margin: 0 auto;
+  color: var(--off-white);
+  font-weight: 300;
+  padding: 0.4rem 1.2rem;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.more-button:hover {
+    background-color: var(--light-blue);
+    padding: 0.4rem 2rem;
+}
+
+.more-button:hover i {
+    display: inline;
+    transition: 0.5s;
+}
+
+.more-button i {
+    display: none;
+}
+
+
+/* Horisontal Info */
+
+.horisontal-info {
+    background-size: cover;
+    height: 40vh;
+}
+
+.horisontal-info h2 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.horisontal-info>div {
+    background-color: var(--off-white);
+    width: 45%;
+    opacity: 0.85;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.5%;
+
+}
+
+.horisontal-info .left-info {
+    -webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.horisontal-info .left-info p {
+    border-left: 3px solid var(--light-blue);
+    padding: 0 1rem;
+    margin: 1rem 0 0 1rem;
+    padding-right: 20%;
+}
+
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+/* ----------------------------- */
+
+/* Landing-section */
+
+.section-landing {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/random/home.jpg");
+    background-attachment: fixed;
+}
+
+
+/* ----------------------------- */
+
+/* About Section */
+
+.section-about-info {
+    text-align: center;
+    padding: 7.5% 10%;
+}
+
+.section-about h1 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.section-about p {
+    font-size: 1.1rem;
+    padding: 0 5%;
+    line-height: 1.6;
+}
+
+/* Horisontal Info */
+
+.section-about .horisontal-info {
+    background-image: url("../images/horisontal-infos/experienced.jpg");
+    background-position: center center;
+}
+
+
+/* ----------------------------- */
+
+/* Product Section */
+
+.section-products {
+    background-color: var(--off-white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    padding: 0 5%;
+}
+
+.product {
+    background-color: white;
+    width: 70%;
+    height: 35vh;
+    padding: 3%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 15px rgba(165,165,165,0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.product-image {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+
+.product-info {
+    -webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+    background-color: var(--off-white);
+    width: 45%;
+    height: 100%;
+    opacity: 0.85;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 2.5%;
+}
+
+.product-info h3 {
+    font-weight: 400;
+}
+
+
+#product-meat .product-image {
+    background-image: url("../images/products/meat.jpg");
+}

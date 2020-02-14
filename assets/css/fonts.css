@@ -1,0 +1,48 @@
+/* Playfair Display */
+
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    src: url("./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+}
+
+/* Lato */
+
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Light.ttf.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Regular.ttf.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Bold.ttf.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Black.ttf.ttf");
+    font-weight: 900;
+}
+
+/* @supports (font-variation-settings: 'wdth'115) {
+    @font-face {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        src: url("./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+    }
+} */
