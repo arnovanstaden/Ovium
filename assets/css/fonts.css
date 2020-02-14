@@ -17,26 +17,34 @@
 
 @font-face {
     font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Light.ttf.ttf");
+    src: url("./fonts/Lato/Lato-Light.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Regular.ttf.ttf");
+    src: url("./fonts/Lato/Lato-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Bold.ttf.ttf");
+    src: url("./fonts/Lato/Lato-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Black.ttf.ttf");
+    src: url("./fonts/Lato/Lato-Black.ttf");
     font-weight: 900;
+}
+
+
+/* Angie */
+
+@font-face {
+    font-family: "Angie";
+    src: url("./fonts/Angie_Open/Angie.ttf");
 }
 
 /* @supports (font-variation-settings: 'wdth'115) {
