@@ -39,6 +39,13 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
 
 /* Angie */
 

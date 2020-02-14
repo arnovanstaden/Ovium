@@ -53,13 +53,18 @@ h6 {
     color: var(--dark-blue);
     text-align: center;
     margin-bottom: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin: 0 auto;
 }
 
 .section-heading p {
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+.section-heading>.page-start-text {
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 /* more button */
@@ -110,9 +115,8 @@ h6 {
 }
 
 .horisontal-info>div {
-    background-color: var(--off-white);
+    background-color: rgb(249, 247, 248, 0.85);
     width: 45%;
-    opacity: 0.85;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -143,7 +147,7 @@ h6 {
     padding-left: 7.5%;
     text-align: right;
     font-size: 1.1rem;
-    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -151,6 +155,61 @@ h6 {
     border-right: 3px solid var(--light-blue);
     padding: 0 1rem;
     margin: 1rem 1rem 0 0;
+}
+
+
+/* Page Intro */
+
+.section-page-intro {
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+}
+
+.section-page-intro>div {
+    background-color: rgb(249, 247, 248, 0.85);
+    width: 45%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 2.5%;
+}
+
+.section-page-intro>div>h1 {
+    font-weight: 600;
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+    margin: 5%;
+    font-size: 3rem;
+    padding: 0.5rem 0;
+}
+
+.page-intro-right {
+    justify-content: flex-end;
+}
+
+.page-intro-right>div {
+    text-align: right;
+    -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.page-intro-left>div {
+    -webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.page-intro-right h1 {
+    border-right: 3px solid var(--light-blue);
+    padding-right: 1.5rem !important;
+}
+
+.page-intro-left h1 {
+    border-left: 3px solid var(--light-blue);
+    padding-left: 1.5rem !important;
 }
 
 
@@ -177,18 +236,18 @@ h6 {
 
 footer {
     text-align: center;
-    
+
     margin-top: 1rem;
 }
 
-footer > div {
+footer>div {
     width: 90%;
     height: 3px;
     background-color: var(--light-blue);
     margin: auto;
 }
 
-footer > img {
+footer>img {
     width: 5%;
     padding: 1rem 0;
 }
@@ -220,7 +279,12 @@ footer a:hover {
     font-weight: 400;
 }
 
+
+
+
 /* ----------------------------- */
+
+/* Home Page */
 
 /* Landing-section */
 
@@ -232,8 +296,6 @@ footer a:hover {
     background-attachment: fixed;
 }
 
-
-/* ----------------------------- */
 
 /* About Section */
 
@@ -265,9 +327,6 @@ footer a:hover {
     background-position: center center;
 }
 
-
-/* ----------------------------- */
-
 /* Product Section */
 
 .section-products {
@@ -285,7 +344,7 @@ footer a:hover {
 .product {
     background-color: white;
     width: 70%;
-    height: 30vh;
+    /* height: 30vh; */
     padding: 3%;
     margin: 0 auto;
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.3);
@@ -301,15 +360,15 @@ footer a:hover {
     background-position: center center;
     background-size: cover;
     height: 100%;
+    height: 25vh;
 }
 
 .product-info {
     -webkit-clip-path: polygon(0 0, 50% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 50% 0%, 100% 100%, 0% 100%);
-    background-color: var(--off-white);
+    background-color: rgb(249, 247, 248, 0.85);
     width: 60%;
     height: 100%;
-    opacity: 0.85;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -323,8 +382,8 @@ footer a:hover {
     font-family: "Lato";
 }
 
-
 #product-meat .product-image {
+    background-position: top center !important;
     background-image: url("../images/products/meat.jpg");
 }
 
@@ -337,6 +396,7 @@ footer a:hover {
 }
 
 #product-train .product-image {
+    background-position: top center !important;
     background-image: url("../images/products/train.jpg");
 }
 
@@ -455,8 +515,199 @@ footer a:hover {
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.3);
 }
 
+
+
 .horisontal-info {
     background-image: url("../images/horisontal-infos/passionate.jpg");
     background-position: center center;
     margin-top: 5%;
+}
+
+
+
+
+/* ----------------------------------- */
+
+/* Products Page*/
+
+.products-page .section-products {
+    padding-bottom: 5%;
+}
+
+.products-page .section-page-intro {
+    background-image: url("../images/page-intros/contact.jpg");
+}
+
+.products-page .product {
+    padding-bottom: 2%;
+}
+
+.product-line {
+    width: 50%;
+    height: 3px;
+    background-color: var(--light-blue);
+    margin: 1rem auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.product-description {
+    text-align: center;
+    margin: 0;
+}
+
+/* ----------------------------------- */
+
+/* About Page */
+
+.about-page .section-page-intro {
+    background-image: url("../images/page-intros/about.jpg");
+}
+
+/* About Info */
+.section-about-page-info .horisontal-info {
+    background-image: url("../images/horisontal-infos/growing.jpg");
+}
+
+.about-values {
+    padding: 3% 10%;
+}
+
+.about-values h1 {
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+}
+
+.about-values p {
+    font-size: 1.2rem;
+
+    font-weight: 300;
+}
+
+.about-vision p {
+    border-left: var(--light-blue) 3px solid;
+    padding-left: 1rem;
+}
+
+.about-vision {
+    margin-bottom: 3rem;
+}
+
+.about-mission {
+    text-align: right;
+}
+
+.about-mission p {
+    border-right: var(--light-blue) 3px solid;
+    padding-right: 1rem;
+}
+
+/* Team Section */
+
+.section-about-team {
+    background-color: var(--off-white);
+}
+
+.team-grid {
+    padding: 5% 10%;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    column-gap: 5%;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.15);
+    margin-bottom: 3rem;
+}
+
+.team-member-image {
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+
+.team-member h5,
+.team-member h6 {
+    font-family: "Lato";
+}
+
+.team-member h5 span {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-details-text {
+    border-left: 3px solid var(--light-blue);
+    padding-left: 1rem;
+}
+
+.team-member-title-extra {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.team-member-info > p {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.team-grid .team-member:nth-child(even) {
+    grid-template-columns: 75% 20%;
+
+}
+
+.team-grid .team-member:nth-child(even) .team-member-image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.team-grid .team-member:nth-child(even) .team-member-info {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.team-grid .team-member:nth-child(even) .team-details-text {
+    border-right: 3px solid var(--light-blue);
+    border-left: none;
+    padding-right: 1rem;
+}
+
+.team-grid #palesa .team-member-image {
+    background-image: url("../images/team/Palesa.jpg");
+}
+
+.team-grid #henry .team-member-image {
+    background-image: url("../images/team/Henry.jpg");
+}
+
+.team-grid #angus .team-member-image {
+    background-image: url("../images/team/Angus.jpg");
+}
+
+
+
+
+/* ------------------------------------- */
+
+/* Contact Page */
+
+.contact-page .section-page-intro {
+    background-image: url("../images/page-intros/contact.jpg");
+}
+
+.section-contact-page-details .contact-grid {
+    padding: 10%;
+}
+
+.section-contact-page-details .horisontal-info {
+    background-image: url("../images/horisontal-infos/sustainable.jpg");
 }
