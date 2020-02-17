@@ -720,13 +720,14 @@ footer a:hover {
 }
 
 .team-grid {
-    padding: 5% 10%;
+    padding: 5% 7.5%;
 }
 
 .team-member {
     display: grid;
-    grid-template-columns: 20% 75%;
+    grid-template-columns: 25% 70%;
     column-gap: 5%;
+    row-gap: 1rem;
     background-color: white;
     padding: 2%;
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.15);
@@ -751,6 +752,7 @@ footer a:hover {
     height: 100%;
     background-position: top center;
     background-size: cover;
+    grid-row: 1/3;
 }
 
 .team-member h5,
@@ -787,36 +789,15 @@ footer a:hover {
     font-weight: 300;
     font-style: italic;
     margin: 0;
-    margin-bottom: 1rem;
 }
 
 .team-member-info>p {
     font-weight: 300;
     margin-bottom: 0;
     line-height: 1.5rem;
+    margin: 0;
 }
 
-.team-grid .team-member:nth-child(even) {
-    grid-template-columns: 75% 20%;
-
-}
-
-.team-grid .team-member:nth-child(even) .team-member-image {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.team-grid .team-member:nth-child(even) .team-member-info {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: right;
-}
-
-.team-grid .team-member:nth-child(even) .team-details-text {
-    border-right: 3px solid var(--light-blue);
-    border-left: none;
-    padding-right: 1rem;
-}
 
 .team-grid #palesa .team-member-image {
     background-image: url("../images/team/Palesa.jpg");
@@ -881,10 +862,12 @@ form textarea {
     -o-transition: 0.5s;
     color: var(--dark-grey);
     font-family: "Lato";
+    margin-top: 1rem;
 }
 
-form input {
-    margin-top: 1rem;
+form textarea {
+    height: 100%;
+    resize: none;
 }
 
 form input::placeholder,

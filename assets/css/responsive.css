@@ -19,9 +19,36 @@
 
 }
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+
+    .team-member {
+        grid-template-rows: 0.75fr 1fr;
+        ;
+    }
+
+    .team-member-image {
+        grid-row: 1/2;
+    }
+
+    .team-member-info {
+        grid-column: 1/3;
+    }
+
+    .team-member-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width:768px) {
+
+    /* General  */
+
+    .section-page-intro>div {
+        width: 55%;
+        ;
+    }
 
     /* Home Page */
 
@@ -32,7 +59,7 @@
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        row-gap: 2rem;
+        row-gap: 3rem;
     }
 
     .contact-map iframe {
@@ -42,6 +69,19 @@
 
     .product-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    /* About Page */
+
+    .team-member {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    /* Contact Page */
+
+    .contact-form-grid {
+        padding: 2% 5%;
     }
 
 }
@@ -73,6 +113,14 @@
         display: block;
     }
 
+    .section-page-intro {
+        padding-top: 0 !important;
+    }
+
+    .section-page-intro>div {
+        width: 65%;
+    }
+
     /* ------------------ */
 
     /* Home Page */
@@ -81,11 +129,11 @@
         width: 65%;
     }
 
-    .left-info > div {
+    .left-info>div {
         padding: 0 15% 0 5%;
     }
 
-    .right-info > div {
+    .right-info>div {
         padding: 0 5% 0 15%;
     }
 
@@ -108,4 +156,51 @@
     section {
         padding-top: 10%;
     }
+
+    .contact-map {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /* About Page */
+
+    .team-member {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+        padding: 5%;
+        row-gap: 2rem;
+    }
+
+    .team-member-details {
+        grid-area: 2/1/3/3;
+    }
+
+    .team-member-image {
+        width: 70%;
+        margin: auto;
+        height: 30vh;
+    }
+
+    .team-grid {
+        padding: 5% 10%;
+    }
+
+    /* Contact Page */
+
+    .contact-form-grid form {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+    }
+
+    .contact-form-grid {
+        padding: 2% 10%;
+    }
+
+    .contact-form-grid form button {
+        grid-area: unset
+    }
+
+
 }
