@@ -28,8 +28,6 @@
 
     <!-- Vendors -->
     <link href="./assets/vendors/font-awesome/css/all.css" rel="stylesheet">
-    <link href="./assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/vendors/hover.css/hover.css" rel="stylesheet">
 
     <!-- Internal -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
@@ -39,6 +37,18 @@
 
 <body class="contact-page">
 
+        <!-- Navigation -->
+
+        <nav class="nav navbar-expand-md justify-content-center">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a href="./index.html">
+                <img src="./assets/images/logos/logo-100.png" alt="">
+            </a>
+            <a class="nav-link" href="./products.html">Products</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </nav>
+
     <!-- Page Intro Section -->
 
     <section class="container-fluid section-page-intro page-intro-left">
@@ -47,7 +57,7 @@
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Contact Details Section -->
 
     <section class="container-fluid section-contact-page-details">
 
@@ -56,9 +66,6 @@
                 <h4>Get in Touch</h4>
                 <a href="mailto:info@ovium.co.za"><i class="fas fa-envelope"></i>info@ovium.co.za</a>
                 <a target="blank" href=""><i class="fas fa-map-marker-alt"></i>Blakesley Farm, Bedford, 5780</a>
-                <div class="message-button">
-                    <p><i class="fas fa-paper-plane"></i>Send us a message</p>
-                </div>
             </div>
             <div class="contact-map">
                 <div class="map-back"></div>
@@ -78,6 +85,35 @@
 
 
 
+    <!-- Contact Form Section -->
+
+    <section class="container-fluid section-contact-page-details" id="contact-form">
+
+
+        <div class="row section-heading">
+            <h1>Send us a Message</h1>
+            <p>Write us a message and we’ll get back to you at the soonest. </p>
+        </div>
+
+        <div class="contact-form-grid">
+            <form>
+                <div class="col">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="phone" placeholder="Your Number">
+                </div>
+                <div class="col">
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i>Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
 
     <!-- footer -->
 
@@ -94,8 +130,6 @@
 
 
     <!-- Scripts -->
-    <script src="./assets/vendors/jquery/jquery-3.4.1.min.js"></script>
-    <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>

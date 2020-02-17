@@ -28,6 +28,7 @@ html {
     font-size: 16px;
     font-family: var(--par-font);
     color: var(--dark-grey);
+    position: relative;
 }
 
 h1,
@@ -37,6 +38,75 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+}
+
+/* Navbar  */
+
+nav {
+    align-items: center;
+    padding: 0.5rem 0;
+    background-color: white;
+    transition: top 0.5s;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -ms-transition: top 0.5s;
+    -o-transition: top 0.5s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: var(--dark-grey);
+    font-weight: 400;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: var(--dark-blue);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+nav img {
+    width: 3.5rem;
+    margin: 0 1rem;
+}
+
+.mobile-nav-icon {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 1.3rem;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.mobile-nav-icon i {
+    padding: 1rem;
+}
+
+.mobile-nav-icon:hover {
+    color: var(--light-blue);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 /* Section Headings */
@@ -55,11 +125,13 @@ h6 {
     margin-bottom: 0;
     padding-bottom: 2rem;
     margin: 0 auto;
+    font-size: 2.5rem;
 }
 
 .section-heading p {
     font-weight: 300;
     font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .section-heading>.page-start-text {
@@ -72,8 +144,6 @@ h6 {
 .more-button {
     background-color: var(--dark-blue);
     margin: 0 auto;
-    color: var(--off-white);
-    font-weight: 300;
     padding: 0.4rem 1.2rem;
     transition: 0.8s;
     cursor: pointer;
@@ -88,6 +158,7 @@ h6 {
     -moz-transition: 0.8s;
     -ms-transition: 0.8s;
     -o-transition: 0.8s;
+
 }
 
 .more-button:hover {
@@ -99,18 +170,24 @@ h6 {
     margin-left: 3px;
 }
 
+.more-button a {
+    text-decoration: none;
+    color: var(--off-white) !important;
+    font-weight: 300;
+}
+
 
 /* Horisontal Info */
 
 .horisontal-info {
     background-size: cover;
     height: 30vh;
+    display: flex;
 }
 
 .horisontal-info h2 {
     font-weight: 550;
     color: var(--dark-blue);
-    letter-spacing: 0.5;
     font-size: 1.8rem;
 }
 
@@ -129,6 +206,7 @@ h6 {
     text-align: left;
     padding-right: 7.5%;
     font-size: 1.1rem;
+    height: 100%;
     -webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
 }
@@ -147,6 +225,7 @@ h6 {
     padding-left: 7.5%;
     text-align: right;
     font-size: 1.1rem;
+    height: 100%;
     -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -256,6 +335,7 @@ footer h1 {
     font-size: 1.5rem;
     font-family: "Angie";
     color: var(--dark-blue);
+
 }
 
 footer p {
@@ -312,6 +392,7 @@ footer a:hover {
     margin-bottom: 0;
     padding-bottom: 2rem;
     margin: 0 auto;
+    font-size: 2.5rem;
 }
 
 .section-about p {
@@ -353,6 +434,11 @@ footer a:hover {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
 
 }
 
@@ -373,12 +459,13 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 2.5%;
+    padding: 0 5% 0 2.5%;
 }
 
 .product-info h3 {
     font-weight: 400;
     font-size: 1.5rem;
+    margin: 1rem 0;
     font-family: "Lato";
 }
 
@@ -398,6 +485,10 @@ footer a:hover {
 #product-train .product-image {
     background-position: top center !important;
     background-image: url("../images/products/train.jpg");
+}
+
+.section-products .button-row {
+    display: flex;
 }
 
 /* Horisontal Info */
@@ -430,6 +521,7 @@ footer a:hover {
     color: var(--dark-blue);
     font-size: 1.8rem;
     margin-bottom: 2rem;
+    font-weight: 600;;
 }
 
 .contact-info a {
@@ -463,18 +555,19 @@ footer a:hover {
     -o-transition: 0.8s
 }
 
-.contact-info .message-button p {
+.contact-info .message-button a {
     background-color: var(--dark-blue);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    padding: 0.4rem 4rem;
-    color: white;
+    padding: 0.6rem 4rem;
+    color: white !important;
     display: inline-block;
     margin-top: 1rem;
     transition: 0.7s;
+    font-weight: 400 !important;
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     -ms-transition: 0.7s;
@@ -482,8 +575,9 @@ footer a:hover {
     cursor: pointer;
 }
 
-.contact-info .message-button p:hover {
+.contact-info .message-button a:hover {
     background-color: var(--light-blue);
+    color: white !important;
 }
 
 
@@ -515,8 +609,6 @@ footer a:hover {
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.3);
 }
 
-
-
 .horisontal-info {
     background-image: url("../images/horisontal-infos/passionate.jpg");
     background-position: center center;
@@ -535,11 +627,25 @@ footer a:hover {
 }
 
 .products-page .section-page-intro {
-    background-image: url("../images/page-intros/contact.jpg");
+    background-image: url("../images/page-intros/products.jpg");
 }
 
 .products-page .product {
     padding-bottom: 2%;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+}
+
+
+.product:hover {
+    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    -o-transform: scale(1.025);
 }
 
 .product-line {
@@ -579,6 +685,8 @@ footer a:hover {
 .about-values h1 {
     color: var(--dark-blue);
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .about-values p {
@@ -623,6 +731,19 @@ footer a:hover {
     padding: 2%;
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.15);
     margin-bottom: 3rem;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
 
 .team-member-image {
@@ -635,6 +756,19 @@ footer a:hover {
 .team-member h5,
 .team-member h6 {
     font-family: "Lato";
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.team-member h5 {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.team-member h6 {
+    font-size: 1rem;
 }
 
 .team-member h5 span {
@@ -652,11 +786,14 @@ footer a:hover {
 .team-member-title-extra {
     font-weight: 300;
     font-style: italic;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
-.team-member-info > p {
+.team-member-info>p {
     font-weight: 300;
     margin-bottom: 0;
+    line-height: 1.5rem;
 }
 
 .team-grid .team-member:nth-child(even) {
@@ -710,4 +847,85 @@ footer a:hover {
 
 .section-contact-page-details .horisontal-info {
     background-image: url("../images/horisontal-infos/sustainable.jpg");
+}
+
+.contact-form-grid {
+    padding: 2% 15%;
+    font-family: "Lato";
+}
+
+.contact-form-grid form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.contact-form-grid form>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 1px solid var(--light-blue);
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    color: var(--dark-grey);
+    font-family: "Lato";
+}
+
+form input {
+    margin-top: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-weight: 300;
+}
+
+form input:focus,
+form textarea:focus {
+    border-bottom: 3px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.contact-form-grid form button {
+    grid-column: 1/3;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 0.6rem 4rem;
+    color: white !important;
+    cursor: pointer;
+}
+
+.contact-form-grid form button:hover {
+    background-color: var(--light-blue);
+}
+
+.contact-form-grid form button i {
+    margin-right: 0.5rem;
 }
