@@ -28,3 +28,15 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "" 
 if (window.location.pathname == "/index.html" || window.location.pathname == "") {
     document.querySelector("nav").style.position = "absolute";
 }
+
+// Mobile Menu
+
+document.querySelector(".mobile-nav-icon").addEventListener("click", function() {
+    document.querySelector(".mobile-nav").style.visibility = "visible";
+    document.querySelector(".mobile-nav").style.opacity = "1";
+});
+
+document.querySelector(".mobile-nav i").addEventListener("click", function() {
+    document.querySelector(".mobile-nav").style.visibility = "hidden";
+    document.querySelector(".mobile-nav").style.opacity = "0";
+});

@@ -159,6 +159,10 @@
         padding-left: 25%;
     }
 
+    .horisontal-info {
+        margin-top: 15% !important;
+    }
+
     /* ------------------ */
 
     /* Home Page */
@@ -203,7 +207,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         column-gap: 0;
-        padding: 10%;
+        padding: 7.5%;
         row-gap: 2rem;
     }
 
@@ -225,8 +229,8 @@
         padding: 0.6rem 1.5rem;
     }
 
-    .horisontal-info {
-        margin-top: 15% !important;
+    .team-member-info>p {
+        text-align: center;
     }
 
 
