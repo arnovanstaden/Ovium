@@ -118,7 +118,17 @@
     }
 
     .section-page-intro>div {
-        width: 65%;
+        width: 80%;
+    }
+
+    .page-intro-left>div {
+        -webkit-clip-path: polygon(0 0, 50% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 50% 0%, 100% 100%, 0% 100%);
+    }
+
+    .page-intro-right>div {
+        -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 
     /* ------------------ */
@@ -178,9 +188,9 @@
     }
 
     .team-member-image {
-        width: 70%;
+        width: 80%;
         margin: auto;
-        height: 30vh;
+        height: 35vh;
     }
 
     .team-grid {
