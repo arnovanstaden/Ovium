@@ -200,7 +200,7 @@
         height: 20vh;
     }
 
-    .section-about p {
+    .section-about-info p {
         padding: 0;
     }
 
@@ -246,7 +246,7 @@
 
     .contact-form-grid form {
         grid-template-columns: 1fr !important;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1.1fr auto;
     }
 
     .contact-form-grid {
@@ -267,6 +267,10 @@
 
     .section-heading>.page-start-text {
         padding-bottom: 5%;
+    }
+
+    .product-info {
+        padding-right: 12.5%
     }
 
 
