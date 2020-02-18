@@ -19,6 +19,12 @@
 
 }
 
+@media screen and (max-width:1080px) {
+    .section-landing {
+        background-image: url("../images/random/home-medium.jpg");
+    }
+}
+
 @media screen and (max-width:992px) {
 
     .team-member {
@@ -71,6 +77,10 @@
         grid-template-columns: 1fr;
     }
 
+    .section-landing {
+        background-image: url("../images/random/home-small.jpg");
+    }
+
 
     /* About Page */
 
@@ -89,11 +99,7 @@
 @media screen and (max-width:678px) {
 
 
-    /* Home Page */
 
-    .section-landing {
-        background-image: url("../images/random/home-mobile.jpg");
-    }
 
     .nav-link {
         margin: 0 1rem;
@@ -264,4 +270,10 @@
     }
 
 
+}
+
+@media screen and (max-width:400px) {
+    .section-landing {
+        background-image: url("../images/random/home-mobile.jpg");
+    }
 }
