@@ -271,9 +271,3 @@
 
 
 }
-
-@media screen and (max-width:400px) {
-    .section-landing {
-        background-image: url("../images/random/home-mobile.jpg");
-    }
-}

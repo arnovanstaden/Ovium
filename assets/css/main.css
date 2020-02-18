@@ -425,7 +425,7 @@ footer a:hover {
     height: 100vh;
     background-position: center center;
     background-size: cover;
-    background-image: url("../images/random/home.jpg");
+    background-image: url("../images/random/home-large.jpg");
     background-attachment: fixed;
 }
 
