@@ -1012,9 +1012,12 @@ form textarea:focus {
 }
 
 .section-thank-you div {
-    background-color: rgba(249,247,248, 0.4);
+    background-color: rgba(249,247,248, 0.5);
     width: 100%;
     text-align: center;
     padding: 1% 5%;
- 
+}
+
+.section-thank-you div > * {
+    font-family: "Lato" !important;
 }

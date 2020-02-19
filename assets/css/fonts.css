@@ -1,63 +1,6 @@
-/* Playfair Display */
-
-@font-face {
-    font-family: "Playfair Display";
-    font-weight: 400;
-    src: url("./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
-    font-weight: 100 1000;
-}
-
-/* Lato */
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Thin.ttf");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Light.ttf");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Regular.ttf");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Bold.ttf");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-Black.ttf");
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato/Lato-LightItalic.ttf");
-    font-weight: 300;
-    font-style: italic;
-}
-
-
 /* Angie */
 
 @font-face {
     font-family: "Angie";
     src: url("./fonts/Angie_Open/Angie.ttf");
 }
-
-/* @supports (font-variation-settings: 'wdth'115) {
-    @font-face {
-        font-family: "Playfair Display";
-        font-weight: 400;
-        src: url("./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
-    }
-} */
