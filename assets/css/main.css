@@ -933,7 +933,8 @@ form textarea:focus {
     color: var(--dark-blue);
 }
 
-.contact-form-grid form button {
+.submit-button {
+    display: inline-block;
     grid-column: 1/3;
     margin: 0 auto;
     margin-top: 3rem;
@@ -955,15 +956,13 @@ form textarea:focus {
     padding: 0.6rem 4rem;
     color: white !important;
     cursor: pointer;
+    width: auto
 }
 
-.contact-form-grid form button:hover {
+.submit-button:hover {
     background-color: var(--light-blue);
 }
 
-.contact-form-grid form button i {
-    margin-right: 0.5rem;
-}
 
 
 
@@ -993,4 +992,29 @@ form textarea:focus {
     background-color: rgba(249,247,248, 0.3);
     position: relative;
     top: 10vh;
+}
+
+
+
+/* ---------------------- */
+
+/* Thank You Page */
+
+.section-thank-you {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/random/thank-you.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-thank-you div {
+    background-color: rgba(249,247,248, 0.4);
+    width: 100%;
+    text-align: center;
+    padding: 1% 5%;
+ 
 }

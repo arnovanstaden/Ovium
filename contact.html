@@ -112,16 +112,16 @@
         </div>
 
         <div class="contact-form-grid">
-            <form>
+            <form method="post" name="myemailform" action="./assets/mail/form-to-email.php">
                 <div>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="phone" placeholder="Your Number">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <input type="phone" placeholder="Your Number" name="phone">
                 </div>
                 <div>
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea placeholder="Your Message" name="message" required></textarea>
                 </div>
-                <button type="submit"><i class="fas fa-paper-plane"></i>Send Message</button>
+                <input type="submit" name='submit' class="submit-button" value="Send Message"></input>
             </form>
         </div>
 

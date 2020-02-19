@@ -252,14 +252,14 @@
 
     .contact-form-grid form {
         grid-template-columns: 1fr !important;
-        grid-template-rows: 1fr 1.1fr auto;
+        grid-template-rows: 1fr 1.1fr auto auto;
     }
 
     .contact-form-grid {
         padding: 2% 10%;
     }
 
-    .contact-form-grid form button {
+    .submit-button {
         grid-area: unset
     }
 
