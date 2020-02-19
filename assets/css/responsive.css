@@ -94,6 +94,12 @@
         padding: 2% 5%;
     }
 
+    /* 404 Page */
+
+    .section-404 {
+        background-image: url("../images/random/404-mobile.jpg");
+    }
+
 }
 
 @media screen and (max-width:678px) {
@@ -271,6 +277,10 @@
 
     .product-info {
         padding-right: 12.5%
+    }
+
+    .section-404 h1 {
+        font-size: 1.5rem;
     }
 
 
