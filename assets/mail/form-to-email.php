@@ -31,7 +31,7 @@ $email_body = "You have received a new message:\n\n".
     "Email:\n $visitor_email";
     "Phone Number:\n $phone";
     
-$to = "arno@webdacity.co.za";//<== update the email address
+$to = "info@ovium.co.za";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
