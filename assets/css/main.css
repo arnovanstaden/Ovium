@@ -1,4 +1,5 @@
-@import "./fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
 
 /* Variables */
 
@@ -38,6 +39,44 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+}
+
+section {
+    padding-top: 4rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
 
 /* Navbar  */
@@ -89,7 +128,8 @@ nav img {
     font-size: 1.3rem;
     display: none;
     cursor: pointer;
-    transition: 0.5s;;
+    transition: 0.5s;
+    ;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
@@ -140,7 +180,7 @@ nav img {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgba(249,247,248, 0.95);
+    background-color: rgba(249, 247, 248, 0.95);
 }
 
 
@@ -154,7 +194,7 @@ nav img {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    
+
 }
 
 .mobile-nav-content a:hover {
@@ -166,7 +206,7 @@ nav img {
 .section-heading {
     text-align: center;
     display: block;
-    padding: 5% 10% 3% 10%;
+    padding-bottom: 2rem;
 }
 
 .section-heading h1 {
@@ -175,8 +215,6 @@ nav img {
     color: var(--dark-blue);
     text-align: center;
     margin-bottom: 0;
-    padding-bottom: 2rem;
-    margin: 0 auto;
     font-size: 2.5rem;
 }
 
@@ -235,10 +273,11 @@ nav img {
     background-size: cover;
     height: 30vh;
     display: flex;
+    margin-top: 4rem;
 }
 
 .horisontal-info h2 {
-    font-weight: 550;
+    font-weight: 500;
     color: var(--dark-blue);
     font-size: 1.8rem;
 }
@@ -294,8 +333,9 @@ nav img {
 .section-page-intro {
     background-position: center center;
     background-size: cover;
-    height: 50vh;
+    height: 40vh;
     display: flex;
+    padding-top: 0;
 }
 
 .section-page-intro>div {
@@ -306,15 +346,15 @@ nav img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 2.5%;
+    padding: 0 1rem;
 }
 
 .section-page-intro>div>h1 {
     font-weight: 600;
     color: var(--dark-blue);
     letter-spacing: 1px;
-    margin: 5%;
-    font-size: 3rem;
+    margin: 1rem;
+    font-size: 2.5rem;
     padding: 0.5rem 0;
 }
 
@@ -385,7 +425,7 @@ footer>img {
 
 footer h1 {
     font-size: 1.5rem;
-    font-family: "Angie";
+    font-family: var(--heading-font);
     color: var(--dark-blue);
 
 }
@@ -433,19 +473,8 @@ footer a:hover {
 
 .section-about-info {
     text-align: center;
-    padding: 7.5% 10%;
 }
 
-.section-about h1 {
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--dark-blue);
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 2rem;
-    margin: 0 auto;
-    font-size: 2.5rem;
-}
 
 .section-about p {
     font-size: 1.1rem;
@@ -470,7 +499,6 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 3rem;
-    padding: 0 5%;
     padding-bottom: 3%;
 }
 
@@ -515,9 +543,10 @@ footer a:hover {
 
 .product-info h3 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
     font-family: "Lato";
+    padding-right: 0.5rem;
 }
 
 #product-meat .product-image {
@@ -547,12 +576,9 @@ footer a:hover {
 .section-products .horisontal-info {
     background-image: url("../images/horisontal-infos/innovative.jpg");
     background-position: center center;
-    margin-top: 7.5%;
 }
 
 /* Contact Section */
-
-
 
 .contact-grid {
     display: grid;
@@ -573,7 +599,8 @@ footer a:hover {
     font-size: 1.8rem;
     margin: 0;
     margin-bottom: 2rem;
-    font-weight: 600;;
+    font-weight: 600;
+    ;
 }
 
 .contact-info a {
@@ -661,11 +688,11 @@ footer a:hover {
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.3);
 }
 
-.horisontal-info {
+.section-contact .horisontal-info {
     background-image: url("../images/horisontal-infos/passionate.jpg");
     background-position: center center;
-    margin-top: 5%;
 }
+
 
 
 
@@ -683,12 +710,12 @@ footer a:hover {
 }
 
 .products-page .product {
-    padding-bottom: 2%;
     transition: 0.8s ease;
     -webkit-transition: 0.8s ease;
     -moz-transition: 0.8s ease;
     -ms-transition: 0.8s ease;
     -o-transition: 0.8s ease;
+    width: 80%;
 }
 
 
@@ -730,10 +757,6 @@ footer a:hover {
     background-image: url("../images/horisontal-infos/growing.jpg");
 }
 
-.about-values {
-    padding: 3% 10%;
-}
-
 .about-values h1 {
     color: var(--dark-blue);
     margin-bottom: 2rem;
@@ -771,17 +794,13 @@ footer a:hover {
     background-color: var(--off-white);
 }
 
-.team-grid {
-    padding: 5% 7.5%;
-}
 
 .team-member {
     display: grid;
-    grid-template-columns: 25% 70%;
-    column-gap: 5%;
+    grid-template-columns: 25% 75%;
     row-gap: 1rem;
     background-color: white;
-    padding: 2%;
+    padding: 1.5rem 1rem;
     box-shadow: 10px 10px 15px rgba(165, 165, 165, 0.15);
     margin-bottom: 3rem;
     transition: 0.8s ease;
@@ -800,41 +819,42 @@ footer a:hover {
 }
 
 .team-member-image {
-    width: 100%;
-    height: 100%;
-    background-position: top center;
-    background-size: cover;
     grid-row: 1/3;
 }
 
-.team-member h5,
-.team-member h6 {
+.team-member-image img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.team-member-name,
+.team-member-title {
     font-family: "Lato";
     font-weight: 400;
     margin: 0;
     margin-bottom: 0.5rem;
 }
 
-.team-member h5 {
-    font-size: 1.25rem;
+.team-member-name {
+    font-size: 1.5rem;
     margin: 0;
     margin-bottom: 0.5rem;
 }
 
-.team-member h6 {
+.team-member-title {
     font-size: 1rem;
 }
 
 .team-member h5 span {
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .team-details-text {
     border-left: 3px solid var(--light-blue);
     padding-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .team-member-title-extra {
@@ -848,19 +868,6 @@ footer a:hover {
     margin-bottom: 0;
     line-height: 1.5rem;
     margin: 0;
-}
-
-
-.team-grid #palesa .team-member-image {
-    background-image: url("../images/team/Palesa.jpg");
-}
-
-.team-grid #henry .team-member-image {
-    background-image: url("../images/team/Henry.jpg");
-}
-
-.team-grid #angus .team-member-image {
-    background-image: url("../images/team/Angus.jpg");
 }
 
 
@@ -883,20 +890,28 @@ footer a:hover {
 }
 
 .contact-form-grid {
-    padding: 2% 15%;
+    padding: 1rem 3rem;
     font-family: "Lato";
 }
 
 .contact-form-grid form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
 }
 
 .contact-form-grid form>div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.contact-form-grid form>div:nth-child(1) {
+    border-right: 2px solid var(--light-blue);
+    padding-right: 2rem;
+}
+
+.contact-form-grid form>div:nth-child(2) {
+    padding-left: 2rem;
 }
 
 form input,
@@ -915,6 +930,7 @@ form textarea {
     color: var(--dark-grey);
     font-family: "Lato";
     margin-top: 1rem;
+    box-sizing: border-box;
 }
 
 form textarea {
@@ -985,11 +1001,11 @@ form textarea:focus {
     margin-top: 0;
     text-align: center;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2rem;
     font-family: "Lato";
-    padding: 1% 5% ;
-    background-color: rgba(249,247,248, 0.3);
+    padding: 1% 5%;
+    background-color: rgba(249, 247, 248, 0.3);
     position: relative;
     top: 10vh;
 }
@@ -1012,12 +1028,12 @@ form textarea:focus {
 }
 
 .section-thank-you div {
-    background-color: rgba(249,247,248, 0.5);
+    background-color: rgba(249, 247, 248, 0.5);
     width: 100%;
     text-align: center;
     padding: 1% 5%;
 }
 
-.section-thank-you div > * {
+.section-thank-you div>* {
     font-family: "Lato" !important;
 }

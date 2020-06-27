@@ -17,12 +17,16 @@
     <meta name="description" content="Want to get in touch? View our contact details or send us a message.">
     <meta name="keywords" content="livestock, sheep, farm, sheep, goats, merino, bedform, angora, wool, fibre" />
 
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Ovium | Contact">
+    <meta property="og:description" content="Get in touch with Ovium">
+    <meta property="og:image" content="https://www.ovium.co.za/assets/images/logos/logo-100.png">
+    <meta property="og:url" content="https://www.ovium.co.za/contact.html">
+    <meta property="og:site_name" content="Ovium">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/logos/logo-100.png">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Theme Colour -->
     <meta name="theme-color" content="#ffffff">
@@ -39,33 +43,33 @@
 
 <body class="contact-page">
 
-        <!-- Navigation -->
+    <!-- Navigation -->
 
-        <nav class="nav navbar-expand-md justify-content-center">
-            <a class="nav-link" href="./index.html">Home</a>
-            <a class="nav-link" href="./about.html">About</a>
-            <a href="./index.html">
-                <img src="./assets/images/logos/logo-100.png" alt="">
-            </a>
-            <a class="nav-link" href="./products.html">Products</a>
-            <a class="nav-link" href="./contact.html">Contact</a>
-        
-            <div class="mobile-nav-icon">
-                <i class="far fa-bars"></i>
-            </div>
-        </nav>
-    
-        <div class="mobile-nav">
-            <i class="fal fa-times"></i>
+    <nav class="nav navbar-expand-md justify-content-center">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./about.html">About</a>
+        <a href="./index.html">
+            <img src="./assets/images/logos/logo-100.png" alt="">
+        </a>
+        <a class="nav-link" href="./products.html">Products</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
 
-            <div class="mobile-nav-content">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./products.html">Products</a>
-                <a href="./contact.html">Contact</a>
-            </div>
+        <div class="mobile-nav-icon">
+            <i class="far fa-bars"></i>
         </div>
-    
+    </nav>
+
+    <div class="mobile-nav">
+        <i class="fal fa-times"></i>
+
+        <div class="mobile-nav-content">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./products.html">Products</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
 
     <!-- Page Intro Section -->
 
@@ -79,15 +83,17 @@
 
     <section class="container-fluid section-contact-page-details">
 
-        <div class="row contact-grid">
-            <div class="contact-info">
-                <h4>Get in Touch</h4>
-                <a href="mailto:info@ovium.co.za"><i class="fas fa-envelope"></i>info@ovium.co.za</a>
-                <a target="blank" href=""><i class="fas fa-map-marker-alt"></i>Blakesley Farm, Bedford, 5780</a>
-            </div>
-            <div class="contact-map">
-                <div class="map-back"></div>
-                <iframe src="https://snazzymaps.com/embed/219150" style="border:none;"></iframe>
+        <div class="container">
+            <div class="row contact-grid">
+                <div class="contact-info">
+                    <h4>Get in Touch</h4>
+                    <a href="mailto:info@ovium.co.za"><i class="fas fa-envelope"></i>info@ovium.co.za</a>
+                    <a target="blank" href=""><i class="fas fa-map-marker-alt"></i>Blakesley Farm, Bedford, 5780</a>
+                </div>
+                <div class="contact-map">
+                    <div class="map-back"></div>
+                    <iframe src="https://snazzymaps.com/embed/219150" style="border:none;"></iframe>
+                </div>
             </div>
         </div>
 
@@ -98,7 +104,6 @@
             </div>
         </div>
 
-
     </section>
 
 
@@ -107,24 +112,25 @@
 
     <section class="container-fluid section-contact-page-details" id="contact-form">
 
+        <div class="container">
+            <div class="row section-heading">
+                <h1>Send us a Message</h1>
+                <p>Write us a message and we’ll get back to you at the soonest. </p>
+            </div>
 
-        <div class="row section-heading">
-            <h1>Send us a Message</h1>
-            <p>Write us a message and we’ll get back to you at the soonest. </p>
-        </div>
-
-        <div class="contact-form-grid">
-            <form method="post" name="myemailform" action="./assets/mail/form-to-email.php">
-                <div>
-                    <input type="text" placeholder="Your Name" name="name" required>
-                    <input type="email" placeholder="Your Email" name="email" required>
-                    <input type="text" placeholder="Your Number" name="phone">
-                </div>
-                <div>
-                    <textarea placeholder="Your Message" name="message" required></textarea>
-                </div>
-                <input type="submit" name='submit' class="submit-button" value="Send Message"></input>
-            </form>
+            <div class="contact-form-grid">
+                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php">
+                    <div>
+                        <input type="text" placeholder="Your Name" name="name" required>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <input type="text" placeholder="Your Number" name="phone">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" name="message" required></textarea>
+                    </div>
+                    <input type="submit" name='submit' class="submit-button" value="Send Message"></input>
+                </form>
+            </div>
         </div>
 
     </section>
