@@ -905,12 +905,12 @@ footer a:hover {
     justify-content: flex-end;
 }
 
-.contact-form-grid form>div:nth-child(1) {
+.contact-form-details {
     border-right: 2px solid var(--light-blue);
     padding-right: 2rem;
 }
 
-.contact-form-grid form>div:nth-child(2) {
+.contact-form-message {
     padding-left: 2rem;
 }
 
